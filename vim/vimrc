@@ -23,14 +23,15 @@ Plugin 'digitaltoad/vim-jade'
 Plugin 'jelera/vim-javascript-syntax'
 Plugin 'vim-scripts/SyntaxComplete.git'
 Plugin 'kchmck/vim-coffee-script'
-Plugin 'Valloric/YouCompleteMe'
+" Plugin 'Valloric/YouCompleteMe'
 Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
+Plugin 'scrooloose/syntastic'
 
 
 " Color Themes
 Bundle 'flazz/vim-colorschemes'
-colorscheme 0x7A69_dark
+colorscheme 256-jungle
 
 """"""""
 filetype plugin indent on
