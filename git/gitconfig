@@ -1,0 +1,32 @@
+[user]
+  name = Aldo Vega (@aldovc)
+  email = hi@aldo.vc
+[alias]
+  cm = commit -m
+  ci = commit --interactive
+  s = status
+  b = branch
+  co = checkout
+  a = add
+  ai = add --interactive
+  re = reset
+  f = fetch
+  l = pull
+  p = push
+  po = push origin
+  d = diff
+[color]
+  diff = auto
+  status = auto
+  branch = auto
+  interactive = auto
+[core]
+  excludesfile = ~/.gitignore
+  editor = vim
+[apply]
+  whitespace = nowarn
+[github]
+  user = aldovc
+[push]
+  default = simple
+
