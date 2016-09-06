@@ -15,6 +15,7 @@
   p = push
   po = push origin
   d = diff
+  lg = log --oneline --decorate --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
 [color]
   diff = auto
   status = auto
