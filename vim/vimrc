@@ -53,7 +53,7 @@ Plugin 'joshdick/onedark.vim'
 
 " Color Themes
 Plugin 'flazz/vim-colorschemes'
-colorscheme onedark
+" colorscheme onedark
 
 """"""""
 filetype plugin indent on
