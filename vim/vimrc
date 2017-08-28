@@ -62,7 +62,7 @@ Plugin 'w0ng/vim-hybrid'
 Plugin 'gosukiwi/vim-atom-dark'
 Plugin 'vim-scripts/Eddie.vim'
 
-colorscheme atom-dark-256
+" colorscheme atom-dark-256
 
 """"""""
 filetype plugin indent on
