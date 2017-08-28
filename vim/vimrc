@@ -1,5 +1,3 @@
-" Custom vimrc file based on vim-sublime
-
 set nocompatible
 filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -23,6 +21,8 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'SirVer/ultisnips'
 Plugin 'tomtom/tcomment_vim'
 Plugin 'ervandew/supertab'
+" For Silver Searcher and other goodies
+Plugin 'mileszs/ack.vim'
 
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
@@ -36,7 +36,6 @@ Plugin 'fatih/vim-go'
 Plugin 'mattn/emmet-vim'
 Plugin 'valloric/MatchTagAlways'
 Plugin 'digitaltoad/vim-jade'
-Plugin 'jelera/vim-javascript-syntax'
 Plugin 'vim-scripts/SyntaxComplete.git'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'vim-scripts/CSApprox'
@@ -47,13 +46,23 @@ Plugin 'herrbischoff/cobalt2.vim'
 Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
 
+Plugin 'thinca/vim-localrc'
+
 "Plugin 'scrooloose/syntastic'
 Plugin 'joshdick/onedark.vim'
+
+Plugin 'crusoexia/vim-monokai'
+Plugin 'altercation/vim-colors-solarized'
 
 
 " Color Themes
 Plugin 'flazz/vim-colorschemes'
-" colorscheme onedark
+Plugin 'AlessandroYorba/Despacio'
+Plugin 'w0ng/vim-hybrid'
+Plugin 'gosukiwi/vim-atom-dark'
+Plugin 'vim-scripts/Eddie.vim'
+
+colorscheme atom-dark-256
 
 """"""""
 filetype plugin indent on
@@ -69,6 +78,7 @@ map <C-b> :NERDTreeToggle<CR>
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
 " Use :help 'option' to see the documentation for the given option.
+set t_Co=256
 set autoindent
 set backspace=indent,eol,start
 set complete-=i
@@ -103,6 +113,7 @@ set list
 inoremap <C-U> <C-G>u<C-U>
 
 set number
+set relativenumber
 set hlsearch
 set ignorecase
 set smartcase
@@ -181,7 +192,7 @@ let g:tcomment#replacements_xml={}
 " Text wrap simpler, then type the open tag or ',"
 vmap <C-w> S
 " Tabs
-let g:airline_theme='onedark'
+let g:airline_theme='badwolf'
 let g:airline#extensions#tabline#enabled = 1
 "nnoremap <C-b>  :tabprevious<CR>
 "inoremap <C-b>  <Esc>:tabprevious<CR>i
@@ -204,3 +215,16 @@ noremap  <Leader>g :GitGutterToggle<CR>
 if filereadable(expand("~/.vimrc.local"))
   source ~/.vimrc.local
 endif
+
+" silver searcher yo
+if executable('ag')
+  let g:ackprg = 'ag --vimgrep --smart-case'
+  cnoreabbrev ag Ack
+  cnoreabbrev aG Ack
+  cnoreabbrev Ag Ack
+  cnoreabbrev AG Ack
+endif
+
+" Do not jump to first result immediately! (ack/silver searcher)
+cnoreabbrev Ack Ack!
+nnoremap <Leader>a :Ack!<Space>
