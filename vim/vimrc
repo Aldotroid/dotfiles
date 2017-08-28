@@ -38,7 +38,7 @@ Plugin 'valloric/MatchTagAlways'
 Plugin 'digitaltoad/vim-jade'
 Plugin 'vim-scripts/SyntaxComplete.git'
 Plugin 'kchmck/vim-coffee-script'
-Plugin 'vim-scripts/CSApprox'
+
 " Cobalt2 Theme
 Plugin 'herrbischoff/cobalt2.vim'
 Plugin 'Valloric/YouCompleteMe'
