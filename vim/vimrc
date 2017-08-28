@@ -41,7 +41,7 @@ Plugin 'kchmck/vim-coffee-script'
 Plugin 'vim-scripts/CSApprox'
 " Cobalt2 Theme
 Plugin 'herrbischoff/cobalt2.vim'
-" Plugin 'Valloric/YouCompleteMe'
+Plugin 'Valloric/YouCompleteMe'
 
 Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
