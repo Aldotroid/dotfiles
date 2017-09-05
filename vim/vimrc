@@ -16,7 +16,6 @@ Plugin 'tpope/vim-unimpaired'
 Plugin 'tpope/vim-abolish'
 Plugin 'tpope/vim-haml'
 
-Plugin 'gcmt/breeze.vim'
 Plugin 'kien/ctrlp.vim'
 Plugin 'SirVer/ultisnips'
 Plugin 'tomtom/tcomment_vim'
@@ -38,10 +37,6 @@ Plugin 'valloric/MatchTagAlways'
 Plugin 'digitaltoad/vim-jade'
 Plugin 'vim-scripts/SyntaxComplete.git'
 Plugin 'kchmck/vim-coffee-script'
-
-" Cobalt2 Theme
-Plugin 'herrbischoff/cobalt2.vim'
-Plugin 'Valloric/YouCompleteMe'
 
 Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
