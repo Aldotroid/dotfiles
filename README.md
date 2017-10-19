@@ -1,4 +1,4 @@
-# Aldotroid's Dot Files
+# Aldo's Dot Files
 
 Just my dotfiles for daily use
 
