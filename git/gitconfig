@@ -1,6 +1,3 @@
-[user]
-  name = Aldo Vega (@aldovc)
-  email = hi@aldo.vc
 [alias]
   cm = commit -m
   ci = commit --interactive
@@ -26,8 +23,6 @@
   editor = vim
 [apply]
   whitespace = nowarn
-[github]
-  user = aldovc
 [push]
   default = simple
 
