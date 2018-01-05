@@ -57,7 +57,15 @@ Plugin 'w0ng/vim-hybrid'
 Plugin 'gosukiwi/vim-atom-dark'
 Plugin 'vim-scripts/Eddie.vim'
 
-" colorscheme atom-dark-256
+set termguicolors
+
+colorscheme atom-dark-256
+
+" pangloss/vim-javascript
+let g:javascript_plugin_jsdoc = 1
+let g:javascript_plugin_flow = 1
+let g:javascript_plugin_ngdoc = 1
+
 
 """"""""
 filetype plugin indent on
@@ -187,7 +195,7 @@ let g:tcomment#replacements_xml={}
 " Text wrap simpler, then type the open tag or ',"
 vmap <C-w> S
 " Tabs
-let g:airline_theme='badwolf'
+let g:airline_theme='bubblegum'
 let g:airline#extensions#tabline#enabled = 1
 "nnoremap <C-b>  :tabprevious<CR>
 "inoremap <C-b>  <Esc>:tabprevious<CR>i
