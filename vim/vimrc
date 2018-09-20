@@ -49,6 +49,8 @@ Plugin 'joshdick/onedark.vim'
 Plugin 'crusoexia/vim-monokai'
 Plugin 'altercation/vim-colors-solarized'
 
+" Async Linting
+Plugin 'w0rp/ale'
 
 " Color Themes
 Plugin 'flazz/vim-colorschemes'
@@ -56,10 +58,18 @@ Plugin 'AlessandroYorba/Despacio'
 Plugin 'w0ng/vim-hybrid'
 Plugin 'gosukiwi/vim-atom-dark'
 Plugin 'vim-scripts/Eddie.vim'
+Plugin 'cocopon/pgmnt.vim'
+Plugin 'raphamorim/lucario'
+Plugin 'arcticicestudio/nord-vim'
+Plugin 'marcopaganini/termschool-vim-theme'
+Plugin 'danilo-augusto/vim-afterglow'
+Plugin 'nightsense/carbonized'
+Plugin 'rakr/vim-one'
+
 
 set termguicolors
 
-colorscheme atom-dark-256
+colorscheme onedark
 
 " pangloss/vim-javascript
 let g:javascript_plugin_jsdoc = 1
@@ -69,7 +79,7 @@ let g:javascript_plugin_ngdoc = 1
 
 """"""""
 filetype plugin indent on
-syntax enable
+syntax on
 
 " Open NERDTree by default
 " autocmd vimenter * NERDTree
@@ -168,7 +178,7 @@ let g:jsx_ext_required = 0
 " make YCM compatible with UltiSnips (using supertab)
 let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
 let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
-let g:SuperTabDefaultCompletionType = '<C-n>'
+
 
 " better key bindings for UltiSnipsExpandTrigger
 let g:UltiSnipsExpandTrigger = "<tab>"
@@ -195,7 +205,7 @@ let g:tcomment#replacements_xml={}
 " Text wrap simpler, then type the open tag or ',"
 vmap <C-w> S
 " Tabs
-let g:airline_theme='bubblegum'
+let g:airline_theme='onedark'
 let g:airline#extensions#tabline#enabled = 1
 "nnoremap <C-b>  :tabprevious<CR>
 "inoremap <C-b>  <Esc>:tabprevious<CR>i
@@ -231,3 +241,5 @@ endif
 " Do not jump to first result immediately! (ack/silver searcher)
 cnoreabbrev Ack Ack!
 nnoremap <Leader>a :Ack!<Space>
+
+nnoremap <Leader>b :ls<CR>:b<Space>
