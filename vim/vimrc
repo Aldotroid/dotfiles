@@ -257,8 +257,8 @@ nnoremap <Leader>a :Ack!<Space>
 nnoremap <Leader>b :ls<CR>:b<Space>
 
 " neovim + pyenv (virtualenv)
-" pyenv virtualenv 3.8.1 py3nvim
+" pyenv virtualenv 3.8.5 py3nvim
 " pyenv activate py3nvim
-" pip install pyenv
+" pip install neovim
 " pyenv which python
 let g:python3_host_prog = '$HOME/.pyenv/versions/py3nvim/bin/python'
