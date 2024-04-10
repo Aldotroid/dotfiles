@@ -1,0 +1,90 @@
+import = ["~/.config/alacritty/dracula.toml"]
+
+# [colors]
+# draw_bold_text_with_bright_colors = false
+# 
+# [[colors.indexed_colors]]
+# color = "0xff9e64"
+# index = 16
+# 
+# [[colors.indexed_colors]]
+# color = "0xbb9af7"
+# index = 17
+# 
+# [[colors.indexed_colors]]
+# color = "0x1d252c"
+# index = 18
+# 
+# [[colors.indexed_colors]]
+# color = "0x28323a"
+# index = 19
+# 
+# [[colors.indexed_colors]]
+# color = "0xb7c5d3"
+# index = 20
+# 
+# [[colors.indexed_colors]]
+# color = "0xf6f6f8"
+# index = 21
+# 
+# [colors.bright]
+# black = "0x526270"
+# blue = "0x7aa2f7"
+# cyan = "0x89ddff"
+# green = "0x9ece6a"
+# magenta = "0xbb9af7"
+# red = "0xf7768e"
+# white = "0xfbfbfd"
+# yellow = "0xb7c5d3"
+# 
+# [colors.cursor]
+# cursor = "0xd8e2ec"
+# text = "0x171d23"
+# 
+# [colors.normal]
+# black = "0x171d23"
+# blue = "0x7aa2f7"
+# cyan = "0x89ddff"
+# green = "0x9ece6a"
+# magenta = "0xbb9af7"
+# red = "0xf7768e"
+# white = "0xd8e2ec"
+# yellow = "0xb7c5d3"
+# 
+# [colors.primary]
+# background = "0x171d23"
+# foreground = "0xd8e2ec"
+# 
+[font]
+size = 14
+# 
+# [font.bold]
+# family = "JetBrains Mono for Powerline"
+
+[font.glyph_offset]
+x = 0
+y = 0
+
+[font.italic]
+family = "JetBrains Mono for Powerline"
+
+[font.normal]
+family = "JetBrains Mono for Powerline"
+
+[font.offset]
+x = 0
+y = 0
+
+[[keyboard.bindings]]
+action = "SpawnNewInstance"
+key = "N"
+mods = "Option"
+
+[[keyboard.bindings]]
+action = "Paste"
+key = "Paste"
+
+[[keyboard.bindings]]
+action = "Copy"
+key = "Copy"
+

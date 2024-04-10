@@ -1,0 +1,145 @@
+# Key Bindings
+key_bindings:
+  - {key: N, mods: Option, action: SpawnNewInstance}
+  - {key: Paste, action: Paste}
+  - {key: Copy, action: Copy}
+# Font configuration (changes require restart)
+window:
+  opacity: 0.95
+font:
+  # The normal (roman) font face to use.
+  # Style can be specified to pick a specific face.
+  normal:
+    family: JetBrains Mono for Powerline
+    # family: "Fira Code"
+    # family: "Source Code Pro"
+    # style: retina
+
+  # The bold font face
+  bold:
+    family: JetBrains Mono for Powerline
+    # family: "Fira Code"
+    # family: "Source Code Pro"
+
+  # The italic font face
+  italic:
+    family: JetBrains Mono for Powerline
+    # family: "Fira Code"
+    # family: "Source Code Pro"
+    # style: "Medium Italic"
+
+  # Point size of the font
+  size: 14
+
+  # Offset is the extra space around each character. offset.y can be thought of
+  # as modifying the linespacing, and offset.x as modifying the letter spacing.
+  offset:
+    x: 0
+    y: 0
+
+  # Glyph offset determines the locations of the glyphs within their cells with
+  # the default being at the bottom. Increase the x offset to move the glyph to
+  # the right, increase the y offset to move the glyph upward.
+  glyph_offset:
+    x: 0
+    y: 0
+
+  # Thin stroke font rendering (macOS only)
+  #
+  # Thin strokes are suitable for retina displays, but for non-retina you
+  # probably want this set to false.
+  #
+  # macOS >= 10.14.x:
+  #
+  # If the font quality on non-retina display looks bad then set
+  # `use_thin_strokes` to `true` and enable font smoothing by running the
+  # following command:
+  #   `defaults write -g CGFontRenderingFontSmoothingDisabled -bool NO`
+  #
+  # This is a global setting and will require a log out or restart to take
+  # effect.
+  # use_thin_strokes: true # DEPRECATED
+
+# When true, bold text is drawn using the bright variant of colors.
+draw_bold_text_with_bright_colors: false
+
+# Use custom cursor colors. If true, display the cursor in the cursor.foreground
+# and cursor.background colors, otherwise invert the colors of the cursor.
+# custom_cursor_colors: false
+
+# Colors (Gruvbox dark)
+#colors:
+#  # Default colors
+#  primary:
+#    # hard contrast: background = '0x1d2021'
+#    background: '0x282828'
+#    # soft contrast: background = '0x32302f'
+#    foreground: '0xebdbb2'
+#
+#  # Normal colors
+#  normal:
+#    black:   '0x282828'
+#    red:     '0xcc241d'
+#    green:   '0x98971a'
+#    yellow:  '0xd79921'
+#    blue:    '0x458588'
+#    magenta: '0xb16286'
+#    cyan:    '0x689d6a'
+#    white:   '0xa89984'
+#
+#  # Bright colors
+#  bright:
+#    black:   '0x928374'
+#    red:     '0xfb4934'
+#    green:   '0xb8bb26'
+#    yellow:  '0xfabd2f'
+#    blue:    '0x83a598'
+#    magenta: '0xd3869b'
+#    cyan:    '0x8ec07c'
+#    white:   '0xebdbb2'
+
+# Colors (Gruvbox dark)
+# colors:
+#   # COLORSCHEME: base16-tokyo-city-dark-256.yml
+#   # Default colors
+#   primary:
+#     # hard contrast: background = '0x1d2021'
+#     background: '0x171d23'
+#     foreground: '0xd8e2ec'
+# 
+#   # Colors the cursor will use if `custom_cursor_colors` is true
+#   normal:
+#     black: '0x171d23'
+#     red: '0xf7768e'
+#     green: '0x9ece6a'
+#     yellow: '0xb7c5d3'
+#     blue: '0x7aa2f7'
+#     magenta: '0xbb9af7'
+#     cyan: '0x89ddff'
+#     white: '0xd8e2ec'
+# 
+#   # Bright colors
+#   bright:
+#     black: '0x526270'
+#     red: '0xf7768e'
+#     green: '0x9ece6a'
+#     yellow: '0xb7c5d3'
+#     blue: '0x7aa2f7'
+#     magenta: '0xbb9af7'
+#     cyan: '0x89ddff'
+#     white: '0xfbfbfd'
+# 
+#   cursor:
+#     text: '0x171d23'
+#     cursor: '0xd8e2ec'
+# 
+#   # Normal colors
+#   indexed_colors:
+#     - {index: 16, color: '0xff9e64'}
+#     - {index: 17, color: '0xbb9af7'}
+#     - {index: 18, color: '0x1d252c'}
+#     - {index: 19, color: '0x28323a'}
+#     - {index: 20, color: '0xb7c5d3'}
+#     - {index: 21, color: '0xf6f6f8'}
+# Dracula Theme
+import = ["dracula.toml"]
